@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    /* Heading (XL) */
+    font-family: 'AvertaStd-Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 88px;
+    /* identical to box height, or 110% */
+
+    display: flex;
+    align-items: center;
+
+    /* Black */
+
+    color: #2D2D2D;
+
+}
