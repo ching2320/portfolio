@@ -1,20 +1,69 @@
 *{
     margin: 0;
     padding: 0;
-
-    /* Heading (XL) */
     font-family: 'AvertaStd-Bold';
-    font-style: normal;
-    font-weight: 400;
     font-size: 80px;
     line-height: 88px;
-    /* identical to box height, or 110% */
-
-    display: flex;
-    align-items: center;
+    box-sizing: border-box;
 
     /* Black */
 
     color: #2D2D2D;
 
+}
+
+body{
+    background: #fff;
+    color: #2D2D2D;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 8px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 160px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+
+nav ul li a{
+    color: #2D2D2D;
+    text-decoration: none;
+    font-size: small;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #4E46B4;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
 }
