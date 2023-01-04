@@ -18,8 +18,78 @@
             <li><a href="#">About</a></li>
         </ul>
         </nav>
+        <div class="header-text">
+            <p>Nice to meet you!</p>
+            <h1>Hi, I'm<br><span>Christine</span></h1>
+            <body>
+                Based in Taiwan, I am a UI/UX designer passionate about<br>
+                solving problems for people to improve our lives and<br>
+                constantly learning new things every day.
+            </body>
+        </div>
     </div>
 </div>
+
+<!-- --------about-------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about-01.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I am a UIUX designer with 2 years professional experience. I am passionate about resolving problems for people to improve our lives and constantly learning new things every day. I am currently working at CYTENA BPS. 
+                    The first time I learned about user experience and UI design was from the concept art course in game design. I was impressed and inspired that a great UX design can lead the player to enjoy the game immensely.
+                    I live in New Taipei City, I love to doing yoga in my free time.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Visual Design</span><br>Business card design<br>Brochure design</li>
+                        <li><span>Illustration</span><br>Logo design<br>Brand dasign</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020 - Current</span><br>UI/UX Designer in CYTENA BPS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Jan. 2020 - Apr. 2020</span><br>UI / UX Design, online courses in Coursera by California Institute of the Arts</li>
+                        <li><span>Jun. 2019 — Dec. 2019</span><br>Concept Art Course, Institute of Information Industry</li>
+                        <li><span>Sep. 2010 – Jun. 2015</span><br>National Cheng Kung University (NCKU) — B.A. in Taiwanese Literature</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab")
+        }
+    }
+
+</script>
+
+
 
 </body>
 </html>
