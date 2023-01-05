@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christine Y. | Portfolio website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e8315ea498.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -39,11 +40,11 @@
                 <img src="images/about-01.jpg">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About me</h1>
-                <p>I am a UIUX designer with 2 years professional experience. I am passionate about resolving problems for people to improve our lives and constantly learning new things every day. I am currently working at CYTENA BPS. 
-                    The first time I learned about user experience and UI design was from the concept art course in game design. I was impressed and inspired that a great UX design can lead the player to enjoy the game immensely.
-                    I live in New Taipei City, I love to doing yoga in my free time.</p>
-                
+                <h1 class="sub-title">About Me</h1>
+                    <p>I am a UIUX designer with 2 years professional experience. I am passionate about resolving problems for people to improve our lives and constantly learning new things every day. I am currently working at CYTENA BPS.</p>
+                    <p>The first time I learned about user experience and UI design was from the concept art course in game design. I was impressed and inspired that a great UX design can lead the player to enjoy the game immensely.</p>
+                    <p>I live in New Taipei City, I love to doing yoga in my free time.</p>
+                    
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -51,9 +52,9 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Visual Design</span><br>Business card design<br>Brochure design</li>
-                        <li><span>Illustration</span><br>Logo design<br>Brand dasign</li>
+                        <li><span>UI/UX</span><br>Designing Web / App interfaces</li>
+                        <li><span>Visual Design</span><br>Business card design / Brochure design</li>
+                        <li><span>Illustration</span><br>Logo design / Brand dasign</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
@@ -64,14 +65,70 @@
                 <div class="tab-contents" id="education">
                     <ul>
                         <li><span>Jan. 2020 - Apr. 2020</span><br>UI / UX Design, online courses in Coursera by California Institute of the Arts</li>
-                        <li><span>Jun. 2019 — Dec. 2019</span><br>Concept Art Course, Institute of Information Industry</li>
-                        <li><span>Sep. 2010 – Jun. 2015</span><br>National Cheng Kung University (NCKU) — B.A. in Taiwanese Literature</li>
+                        <li><span>Jun. 2019 - Dec. 2019</span><br>Concept Art Course, Institute of Information Industry</li>
+                        <li><span>Sep. 2010 - Jun. 2015</span><br>National Cheng Kung University (NCKU) — B.A. in Taiwanese Literature</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-- -----------services----------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-regular fa-fire"></i>
+                <h2>UI Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos commodi accusamus sint porro molestiae minus, 
+                    doloribus velit delectus deserunt perferendis hic fuga, ab, aut fugiat saepe dolorum magni sunt. Ratione?</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos commodi accusamus sint porro molestiae minus, 
+                    doloribus velit delectus deserunt perferendis hic fuga, ab, aut fugiat saepe dolorum magni sunt. Ratione?</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-tree"></i>
+                <h2>Visual Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos commodi accusamus sint porro molestiae minus, 
+                    doloribus velit delectus deserunt perferendis hic fuga, ab, aut fugiat saepe dolorum magni sunt. Ratione?</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------portfolio----------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/project-01.png">
+            </div>
+            <div class="work">
+                <img src="images/project-02.jpg">
+            </div>
+            <div class="work">
+                <img src="images/project-03.jpg">
+            </div>
+            <div class="work">
+                <img src="images/project-04.png">
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
 
 <script>
 
@@ -80,11 +137,13 @@
 
     function opentab(tabname){
         for(tablink of tablinks){
-            tablink.classlist.remove("active-link")
+            tablink.classList.remove("active-link");
         }
         for(tabcontent of tabcontents){
-            tabcontent.classlist.remove("active-tab")
+            tabcontent.classList.remove("active-tab");
         }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
     }
 
 </script>
