@@ -282,3 +282,72 @@ nav ul li a:hover::after{
     border: 1px solid #4E46B4;
     color: #4E46B4;
 }
+
+/* --------------------------------contact-------------------------------- */
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 50%;
+}
+.contact-left p{
+    margin: 24px;
+}
+.contact-left p i{
+    color: #4E46B4;
+    margin-right: 12px;
+    font-size: 24px;
+}
+.social-icons{
+    margin-top: 24px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 12px;
+    color: #2D2D2D;
+    display: inline-block;
+    transition: transform 0.5s;s
+}
+.social-icons a:hover{
+    color: #4E46B4;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #4E46B4;
+}
+.btn.btn2:hover{
+    background: #fff;
+    border: 1px solid #4E46B4;
+    color: #4E46B4;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #f3f3f3;
+    padding: 16px;
+    margin: 16px 0;
+    color:#2D2D2D;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form btn2{
+    padding: 14px 60px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 24px 0;
+    background: #F2E6FF;
+    font-size: 12px;
+    margin-top: 24px;
+}
