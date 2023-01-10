@@ -272,7 +272,7 @@ nav ul li a:hover::after{
     border: 1px solid #4E46B4;
     background: #4E46B4;
     padding: 14px 48px;
-    border-radius: 24px;
+    border-radius: 6px;
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
@@ -309,7 +309,7 @@ nav ul li a:hover::after{
     margin-right: 12px;
     color: #2D2D2D;
     display: inline-block;
-    transition: transform 0.5s;s
+    transition: transform 0.5s;
 }
 .social-icons a:hover{
     color: #4E46B4;
@@ -318,6 +318,7 @@ nav ul li a:hover::after{
 .btn.btn2{
     display: inline-block;
     background: #4E46B4;
+    font-size: 16px;
 }
 .btn.btn2:hover{
     background: #fff;
@@ -347,7 +348,93 @@ form btn2{
     width: 100%;
     text-align: center;
     padding: 24px 0;
-    background: #F2E6FF;
+    background: #2D2D2D;
     font-size: 12px;
     margin-top: 24px;
+}
+.copyright p{
+    color: #fff;
+}
+
+/* --------------------------------css for small screens-------------------------------- */
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/phone-background.png);
+    }
+    .header-text{
+        margin-top: 24px;
+        font-size: 13px;
+        text-align: center;
+    }
+    .header-text p{
+        margin-top: 10%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .header-text h1{
+        font-size: 30px;
+        line-height: 42px;
+        text-align: center;
+    }
+    .header-text h1 span{
+        font-size: 30px;
+        line-height: 48px;
+        text-align: center;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 24px;
+    }
+    nav ul{
+        background: #4E46B4;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 48px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 24px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        cursor: pointer;
+        color: #fff;
+    }
+    .sub-title{
+        font-size: 24px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 24px;
+    }
+    .about-col-2{
+        font-size: 13px;
+    }
+    .tab-links{
+        font-size: 14px;
+        margin-right: 24px;
+    }
+    .work-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-gap: 48px;
+        margin-top: 24px;
+    }
 }
