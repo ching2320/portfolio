@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #fff;
     color: #2D2D2D;
@@ -319,7 +323,10 @@ nav ul li a:hover::after{
     display: inline-block;
     background: #4E46B4;
     font-size: 16px;
+    margin-top: 32px;
+    cursor: pointer;
 }
+
 .btn.btn2:hover{
     background: #fff;
     border: 1px solid #4E46B4;
@@ -334,16 +341,12 @@ form input, form textarea{
     outline: none;
     background: #f3f3f3;
     padding: 16px;
-    margin: 16px 0;
+    margin: 12px 0;
     color:#2D2D2D;
     font-size: 18px;
     border-radius: 6px;
 }
-form btn2{
-    padding: 14px 60px;
-    margin-top: 24px;
-    cursor: pointer;
-}
+
 .copyright{
     width: 100%;
     text-align: center;
@@ -437,4 +440,13 @@ nav .fa-solid{
         grid-gap: 48px;
         margin-top: 24px;
     }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+}
+
+#msg{
+    color: #4E46B4;
+    margin-top: -32px;
+    display: block;
 }
