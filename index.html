@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,233 +9,254 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e8315ea498.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<div id="header">
-    <div class="container">
-        <nav>
-        <img src="images/logo.png" class="logo">
-        <ul id="sidemenu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-        </ul>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Nice to meet you!</p>
-            <h1>Hi, I'm<br><span>Christine</span></h1>
-            <body>
-                Based in Taiwan, I am a UI/UX designer passionate about<br>
-                solving problems for people to improve our lives and<br>
-                constantly learning new things every day.
-            </body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Nice to meet you!</p>
+                <h1>Hi, I'm<br><span>Christine</span></h1>
+
+                <body>
+                    Based in Taiwan, I am a UI/UX designer passionate about<br>
+                    solving problems for people to improve our lives and<br>
+                    constantly learning new things every day.
+                </body>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- --------------------------------about-------------------------------- -->
+    <!-- --------------------------------about-------------------------------- -->
 
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/about-01.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                    <p>I am a UIUX designer with 2 years professional experience. I am passionate about resolving problems for people to improve our lives and constantly learning new things every day. I am currently working at CYTENA BPS.</p>
-                    <p>The first time I learned about user experience and UI design was from the concept art course in game design. I was impressed and inspired that a great UX design can lead the player to enjoy the game immensely.</p>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-01.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a UIUX designer with 2 years professional experience. I am passionate about resolving
+                        problems for people to improve our lives and constantly learning new things every day. I am
+                        currently working at CYTENA BPS.</p>
+                    <p>The first time I learned about user experience and UI design was from the concept art course in
+                        game design. I was impressed and inspired that a great UX design can lead the player to enjoy
+                        the game immensely.</p>
                     <p>I live in New Taipei City, I love to doing yoga in my free time.</p>
-                    
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web / App interfaces</li>
+                            <li><span>Visual Design</span><br>Business card design / Brochure design</li>
+                            <li><span>Illustration</span><br>Logo design / Brand dasign</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020 - Current</span><br>UI/UX Designer in CYTENA BPS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Jan. 2020 - Apr. 2020</span><br>UI / UX Design, online courses in Coursera by
+                                California Institute of the Arts</li>
+                            <li><span>Jun. 2019 - Dec. 2019</span><br>Concept Art Course, Institute of Information
+                                Industry</li>
+                            <li><span>Sep. 2010 - Jun. 2015</span><br>National Cheng Kung University (NCKU) — B.A. in
+                                Taiwanese Literature</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing Web / App interfaces</li>
-                        <li><span>Visual Design</span><br>Business card design / Brochure design</li>
-                        <li><span>Illustration</span><br>Logo design / Brand dasign</li>
-                    </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------services-------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>UI Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos commodi accusamus sint porro
+                        molestiae minus,
+                        doloribus velit delectus deserunt perferendis hic fuga, ab, aut fugiat saepe dolorum magni sunt.
+                        Ratione?</p>
+                    <a href="#">Learn More</a>
                 </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2020 - Current</span><br>UI/UX Designer in CYTENA BPS</li>
-                    </ul>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos commodi accusamus sint porro
+                        molestiae minus,
+                        doloribus velit delectus deserunt perferendis hic fuga, ab, aut fugiat saepe dolorum magni sunt.
+                        Ratione?</p>
+                    <a href="#">Learn More</a>
                 </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>Jan. 2020 - Apr. 2020</span><br>UI / UX Design, online courses in Coursera by California Institute of the Arts</li>
-                        <li><span>Jun. 2019 - Dec. 2019</span><br>Concept Art Course, Institute of Information Industry</li>
-                        <li><span>Sep. 2010 - Jun. 2015</span><br>National Cheng Kung University (NCKU) — B.A. in Taiwanese Literature</li>
-                    </ul>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Visual Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos commodi accusamus sint porro
+                        molestiae minus,
+                        doloribus velit delectus deserunt perferendis hic fuga, ab, aut fugiat saepe dolorum magni sunt.
+                        Ratione?</p>
+                    <a href="#">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- --------------------------------services-------------------------------- -->
+    <!-- --------------------------------portfolio-------------------------------- -->
 
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-desktop"></i>
-                <h2>UI Design</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos commodi accusamus sint porro molestiae minus, 
-                    doloribus velit delectus deserunt perferendis hic fuga, ab, aut fugiat saepe dolorum magni sunt. Ratione?</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos commodi accusamus sint porro molestiae minus, 
-                    doloribus velit delectus deserunt perferendis hic fuga, ab, aut fugiat saepe dolorum magni sunt. Ratione?</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-palette"></i>
-                <h2>Visual Design</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos commodi accusamus sint porro molestiae minus, 
-                    doloribus velit delectus deserunt perferendis hic fuga, ab, aut fugiat saepe dolorum magni sunt. Ratione?</p>
-                <a href="#">Learn More</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- --------------------------------portfolio-------------------------------- -->
-
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/project-01.png">
-                <div class="layer">
-                    <h3>S.NEST | Desktop software</h3>
-                    <p>UI/UX Design, 2021-2022</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/project-01.png">
+                    <div class="layer">
+                        <h3>S.NEST | Desktop software</h3>
+                        <p>UI/UX Design, 2021-2022</p>
+                        <a href="https://www.figma.com/proto/htcja3oeByumavOc7gqxds/S.NEST-%7C-Desktop-Software?page-id=310%3A5173&node-id=420%3A11334&viewport=515%2C365%2C0.04&scaling=scale-down-width&starting-point-node-id=310%3A8360"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/project-02.png">
-                <div class="layer">
-                    <h3>Skywatch | Web app</h3>
-                    <p>UI/UX Design, 2022/01-03</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="work">
+                    <img src="images/project-02.png">
+                    <div class="layer">
+                        <h3>Skywatch | Web app</h3>
+                        <p>UI/UX Design, 2022/01-03</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/project-03.jpg">
-                <div class="layer">
-                    <h3>Dresswell | Mobile app</h3>
-                    <p>UI/UX Design, 2020</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="work">
+                    <img src="images/project-03.jpg">
+                    <div class="layer">
+                        <h3>Dresswell | Mobile app</h3>
+                        <p>UI/UX Design, 2020</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/project-04.png">
-                <div class="layer">
-                    <h3>Daily UI</h3>
-                    <p>UI/UX Design, 2020</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="work">
+                    <img src="images/project-04.png">
+                    <div class="layer">
+                        <h3>Daily UI</h3>
+                        <p>UI/UX Design, 2020</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">Load More</a>
     </div>
-</div>
 
-<!-- --------------------------------contact-------------------------------- -->
+    <!-- --------------------------------contact-------------------------------- -->
 
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> ching2320@gmail.com</p>
-                <div class="social-icons">
-                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-square-behance"></i></a>
-                    <a href=""><i class="fa-brands fa-dribbble"></i></i></a>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:ching2320@gmail.com"> ching2320@gmail.com
+                        </a></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yulin-yeh-a487a81b0/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.behance.net/ching23200cb2" target="_blank"><i
+                                class="fa-brands fa-square-behance"></i></a>
+                        <a href="https://dribbble.com/ching2320" target="_blank"><i
+                                class="fa-brands fa-dribbble"></i></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1RBDRXZC3lq8ILxrioSjlopCc0hsx8AwF/view?usp=sharing "
+                        target="_blank" download class="btn btn2">Download CV</a>
                 </div>
-                <a href="images/" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your name" required>
-                    <input type="email" name="Email" placeholder="Your email" required>
-                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
             </div>
         </div>
+        <div class="copyright">
+            <p>Copyright © Christine Y.</p>
+        </div>
     </div>
-    <div class="copyright">
-        <p>Copyright © Christine Y.</p>
-    </div>
-</div>
 
 
 
-<script>
+    <script>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
 
-</script>
+    </script>
 
-<script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbximJbWcmG4i6iy9POqELJsIj186Y4_4HMKjnkj0IhFFarPGLfmtWrN8WKLGvv6hxeu/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
 
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbximJbWcmG4i6iy9POqELJsIj186Y4_4HMKjnkj0IhFFarPGLfmtWrN8WKLGvv6hxeu/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-  
+    </script>
+
 
 </body>
+
 </html>
